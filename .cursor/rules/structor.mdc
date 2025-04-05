@@ -1,10 +1,46 @@
 ---
-description:
-globs:
+description: 
+globs: 
 alwaysApply: true
 ---
+# Cấu trúc dự án MyBlazorApp
 
-# Your rule content
+Dự án Blazor này được tổ chức theo cấu trúc tiêu chuẩn của ASP.NET Core Blazor:
 
-- You can @ files here
-- You can use markdown but dont have to
+## Thư mục gốc
+- **Program.cs**: Điểm khởi đầu của ứng dụng, cấu hình dịch vụ và pipeline HTTP
+- **MyBlazorApp.csproj**: File cấu hình dự án .NET
+- **appsettings.json**: Cấu hình ứng dụng cho môi trường chính
+- **appsettings.Development.json**: Cấu hình ứng dụng cho môi trường phát triển
+
+## Components/
+Chứa các thành phần Razor:
+- **App.razor**: Thành phần gốc của ứng dụng
+- **Routes.razor**: Định nghĩa các route của ứng dụng
+- **_Imports.razor**: Chứa các namespace được nhập mặc định
+
+### Components/Pages/
+Chứa các trang của ứng dụng:
+- **Home.razor**: Trang chủ
+- **Counter.razor**: Trang ví dụ đếm số
+- **Weather.razor**: Trang ví dụ hiển thị dữ liệu thời tiết
+- **Error.razor**: Trang hiển thị lỗi
+
+### Components/Layout/
+Chứa các thành phần bố cục:
+- **MainLayout.razor**: Bố cục chính của ứng dụng
+- **NavMenu.razor**: Menu điều hướng
+
+## wwwroot/
+Chứa các tài nguyên tĩnh:
+- **app.css**: CSS chính của ứng dụng
+- **bootstrap/**: Thư viện Bootstrap
+- **favicon.png**: Biểu tượng trang web
+
+## Properties/
+Chứa cấu hình khởi chạy:
+- **launchSettings.json**: Cấu hình khởi chạy ứng dụng, bao gồm URL và cổng
+
+## Các thư mục khác
+- **bin/**: Chứa các file đã biên dịch
+- **obj/**: Chứa các file tạm thời trong quá trình biên dịch
